@@ -16,7 +16,7 @@ int dicimalToBinary(int num){
 
 
 int main(){
- int number=5;
+ int number=453;
  cout<<dicimalToBinary(number)<<endl;
     return 0;
 }
