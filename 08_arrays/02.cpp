@@ -1,5 +1,5 @@
-// Find the greatest  number in an array
 
+// Find the greatest  number in an array
 #include<iostream>
 using namespace std;
 int main(){
@@ -8,9 +8,10 @@ int main(){
   int largest=INT32_MIN;
 
   for(int i=0;i<size;i++){
-    if(nums[i] > largest){
-      largest =nums[i];
-    }
+    // if(nums[i] > largest){
+    //   largest =nums[i];
+    // }
+    largest =max(nums[i],largest  );
   }
 
   cout<<"Largest number is : "<<largest<<endl;

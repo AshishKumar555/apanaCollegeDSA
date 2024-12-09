@@ -8,9 +8,10 @@ int main(){
   int smallest=INT32_MAX;
 
   for(int i=0;i<size;i++){
-    if(nums[i] < smallest){
-      smallest =nums[i];
-    }
+    // if(nums[i] < smallest){
+    //   smallest =nums[i];
+    // }
+    smallest =min(nums[i],smallest);
   }
 
   cout<<"smallest number is : "<<smallest<<endl;
