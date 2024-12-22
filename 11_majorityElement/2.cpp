@@ -12,14 +12,14 @@ vector<int> pairSum(vector<int> nums, int target){
         ans.push_back(j);
         return ans;
     }
-    pairSum > target ? j-- : j++;
+    pairSum > target ? j-- : i++;
    }
     return ans;
 }
 
 int main(){
     vector<int> arr={2,7,11,15};
-    int target = 26;
+    int target = 18;
     vector<int> ans = pairSum(arr,target);
     cout<<"pair num is : "<<ans[0]<<", "<<ans[1]<<endl;
      
