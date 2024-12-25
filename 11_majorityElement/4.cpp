@@ -18,7 +18,8 @@ int majorityElement(vector<int>& nums) { // optimised approach
           return ans;
         }
        }
-       return -1;
+    //    return -1;         -1 return karane par leetcode par not able to submitted 
+    return ans;
     }
 
 int main(){
