@@ -1,30 +1,28 @@
 #include<iostream>
 using namespace std;
 #include<vector>
-#include<algorithm>                   // TC ---  O(n logn + n)=>  nlogn
+#include<algorithm>                   // TC ---logn
 
-int majorityElement(vector<int>& nums) { // a bit changes from my side 
-       int freq =1,ans =nums[0];
+int majorityElement(vector<int>& nums) { //  Moore's algorithm 
+       int freq =0, ans=0 ;
        int n =nums.size();
-       for(int i=0;i<n;i++){
-        if(nums[i] == nums[i+1]){
-            freq++;
-        }
-        else{
-            freq =1,ans =nums[i+1];
-        }
-        
-        if(freq >n/2){
-          return ans;
-        }
+       for(int i =0;i<n;i++){
+            if(freq ==0){
+                ans =nums[i];
+            }
+            if(ans == nums[i]){
+                freq++;
+            }else{
+                freq--;
+            }
        }
-       return -1;
+       return ans;
     }
 
 int main(){
  
-    vector <int> arr2 ={1,2,2,1,1};
-    sort(arr2.begin(),arr2.end());
+    vector <int> arr2 ={1,2,2,2,1,3,3,3,3};
+   
     int ans = majorityElement(arr2);
     cout<<"Majority Element is : "<<ans<<endl;
 
