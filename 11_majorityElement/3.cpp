@@ -1,6 +1,3 @@
-#include<iostream>
-using namespace std;
-#include<vector>
 
 int majorityElement(vector<int>& nums) { // Brute force approach 
         int n=nums.size();
