@@ -1,4 +1,7 @@
-
+#include<iostream>
+using namespace std;
+#include<vector>
+#include<algorithm>                   // TC ---  O(n logn + n)=>  nlogn
 
 int majorityElement(vector<int>& nums) { // optimised approach 
        int freq =1,ans =nums[0];
