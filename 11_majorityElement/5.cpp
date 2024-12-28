@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 #include<vector>
-#include<algorithm>                   // TC ---logn
+                  // TC ---logn
 
 int majorityElement(vector<int>& nums) { //  Moore's algorithm 
        int freq =0, ans=0 ;
@@ -17,7 +17,7 @@ int majorityElement(vector<int>& nums) { //  Moore's algorithm
             }
        }
        return ans;
-    }
+}
 
 int main(){
  
