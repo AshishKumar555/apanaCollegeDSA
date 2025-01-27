@@ -1,9 +1,10 @@
 #include<iostream>
 using namespace std; //square pattern
 int main(){
-    for(int i=1;i<=4;i++){
-        int num=1;
-        for(int j=1;j<=4;j++){
+    int n=4;
+    for(int i=1;i<=n;i++){
+        char num='A';
+        for(int j=1;j<=n;j++){
             cout<<num;
             num++;
         }
